@@ -40,13 +40,15 @@ h1{
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .paragraph{
     padding-left: 150px;
     padding-right: 150px;
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Lora', serif;
     text-align:justify; 
 }
 
