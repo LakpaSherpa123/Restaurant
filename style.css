@@ -33,7 +33,7 @@ body{
 .logo{
     z-index: 1;
     position: fixed;
-    top: -5px;
+    top: -10px;
     left: 20px;
     margin-top: 0px;
 }
