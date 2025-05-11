@@ -41,7 +41,7 @@ body{
     padding-top: 40px;
     height: 400px;
     background-image: url('./images/history.jpg');
-    background-color: rgba(71, 71, 71, 0.5); /* Darker overlay */
+    background-color: rgba(48, 48, 48, 0.374); /* Darker overlay */
     background-blend-mode: multiply; /* Apply blend mode */
     background-size: cover;
     align-items: center;
@@ -139,7 +139,7 @@ textarea{
 }
 
 button {
-    background-color:#bc955c;
+    background-color:#f3ac42;
     color: #000000;
     font-family: "Segoe UI", Roboto;
     font-weight: bold;
@@ -150,7 +150,7 @@ button {
 }
 
 button:hover{
-    background-color:#c9a56e;
+    background-color:#eaa236;
 }
 
 button.reset{
