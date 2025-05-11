@@ -105,6 +105,12 @@ h3{
     text-align:justify; 
 }
 
+.label{
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
 a{
     text-decoration: none;
     color: white;;
@@ -129,13 +135,17 @@ table{
 }
 
 input{
-    width: 85%;
-    height: 30px;
+    width: 95%;
+    height: 35px;
     margin: 5px;
+    border-radius: 5px;
+    border-color: #dbdada;
 }
 
 textarea{
     margin: 5px;
+    border-radius: 5px;
+    border-color: #dbdada;
 }
 
 button {
