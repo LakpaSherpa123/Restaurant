@@ -1,30 +1,222 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menu</title>
-  
-  <link rel='stylesheet' href='./style.css' >
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
+    body {
+      background-color: #fefcfb;
+      padding: 20px;
+    }
+
+    .logo img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    .nav-item {
+      margin: 0 10px;
+    }
+
+    .nav-item a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    .nav-item a.active, .nav-item a:hover {
+      background-color: #ff6347;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 2rem;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .menu-section {
+      margin-bottom: 25px;
+    }
+
+    .menu-option {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+    }
+
+    .menu-option input[type="checkbox"] {
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #555;
+      border-radius: 5px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .menu-option input[type="checkbox"]:checked {
+      background-color: #ff6347;
+    }
+
+    .quantity {
+      width: 50px;
+      margin-left: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 80px;
+      margin-top: 10px;
+    }
+
+    .order-btn {
+      display: block;
+      background-color: #ff6347;
+      color: white;
+      padding: 12px 20px;
+      font-size: 1rem;
+      margin: 20px auto;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .navbar {
+        flex-direction: column;
+      }
+
+      .nav-item {
+        margin: 5px 0;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <div class="logo"><a href="./home.html"><img src = "./images/logo2.png" height="150px" width="150px"/></a></div>
+  <!-- Logo -->
+  <div class="logo">
+    <a href="./home.html">
+      <img src="./images/logo2.png" height="150px" width="150px" alt="Mama's Restaurant Logo"/>
+    </a>
+  </div>
+
+  <!-- Navigation -->
   <div class="navbar">
-    <div class="nav-item"><a href ="./social.html">Socials</a></div>
-    <div class="nav-item"><a href ="./contact.html">Contact</a></div>
-    <div class="nav-item"><a href ="./menu.html">Menu</a></div>
-    <div class="nav-item"><a href ="./history.html">History</a></div>
+    <div class="nav-item"><a href="./social.html">Socials</a></div>
+    <div class="nav-item"><a href="./contact.html">Contact</a></div>
+    <div class="nav-item"><a href="./menu.html" class="active">Menu</a></div>
+    <div class="nav-item"><a href="./history.html">History</a></div>
     <div class="nav-item"><a href="./home.html">Home</a></div>
   </div>
-  <div class="space"></div>
-  <h1 style="transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);">This is Menu page</h1>
+
+  <!-- Title -->
+  <h1>Our Lunch & Dinner Menu</h1>
+
+  <!-- Menu Form -->
+  <form>
+    <!-- Pasta Section -->
+    <div class="menu-section">
+      <label>Pasta Options:</label>
+      <div class="menu-option"><input type="checkbox" name="pasta" value="Spaghetti"/>Spaghetti <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+      <div class="menu-option"><input type="checkbox" name="pasta" value="Fettuccine Alfredo"/>Fettuccine Alfredo <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+      <div class="menu-option"><input type="checkbox" name="pasta" value="Penne Vodka"/>Penne Vodka <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+      <div class="menu-option"><input type="checkbox" name="pasta" value="Linguine Pesto"/>Linguine Pesto <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+      <div class="menu-option"><input type="checkbox" name="pasta" value="Baked Ziti"/>Baked Ziti <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+    </div>
+
+    <!-- Pizza Section -->
+    <div class="menu-section">
+      <label>Pizza Options:</label>
+      <div class="menu-option"><input type="checkbox" name="pizza" value="Small Margherita"/>Small Pizza (feeds 2) <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+      <div class="menu-option"><input type="checkbox" name="pizza" value="Large Margherita"/>Large Pizza (feeds 4) <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+
+      <label style="margin-top:10px;">Toppings:</label>
+      <div class="menu-option"><input type="checkbox" name="topping" value="Mushrooms"/>Mushrooms</div>
+      <div class="menu-option"><input type="checkbox" name="topping" value="Sausage"/>Sausage</div>
+      <div class="menu-option"><input type="checkbox" name="topping" value="Pepperoni"/>Pepperoni</div>
+    </div>
+
+    <!-- Drinks Section -->
+    <div class="menu-section">
+      <label>Drinks:</label>
+      <div class="menu-option"><input type="checkbox" name="drink" value="Coca Cola"/>Coca Cola <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+      <div class="menu-option"><input type="checkbox" name="drink" value="Sprite"/>Sprite <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+      <div class="menu-option"><input type="checkbox" name="drink" value="Coffee"/>Coffee <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+      <div class="menu-option"><input type="checkbox" name="drink" value="Mineral Water"/>Mineral Water <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+      <div class="menu-option"><input type="checkbox" name="drink" value="Wine"/>Wine <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+    </div>
+
+    <!-- Desserts Section -->
+    <div class="menu-section">
+      <label>Desserts:</label>
+      <div class="menu-option"><input type="checkbox" name="dessert" value="Tiramisu"/>Tiramisu <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+      <div class="menu-option"><input type="checkbox" name="dessert" value="Italian Cookies"/>Italian Cookies <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+      <div class="menu-option"><input type="checkbox" name="dessert" value="Affogato"/>Affogato <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+    </div>
+
+    <!-- Free Items -->
+    <div class="menu-section">
+      <label>Free with every meal:</label>
+      <p>✔ Bread</p>
+      <p>✔ Salad</p>
+    </div>
+
+    <!-- Preferences -->
+    <div class="menu-section">
+      <label>Preferences or Special Instructions:</label>
+      <textarea name="preferences" placeholder="No salt, sauce on the side, need utensils, etc."></textarea>
+    </div>
+
+    <!-- Order Button -->
+    <button class="order-btn" type="submit">Order Now</button>
+  </form>
+
+  <!-- Footer -->
   <footer>
     <div class="footerTab">
       <p>COPYRIGHT © 2025 Mama's Restaurant. All rights reserved.</p>
     </div>
   </footer>
-
 
 </body>
 </html>
