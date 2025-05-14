@@ -4,46 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menu</title>
+  <link rel='stylesheet' href='./style.css' >
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background-color: #fefcfb;
-      padding: 20px;
-    }
-
-    .logo img {
-      display: block;
-      margin: 0 auto;
-    }
-
-    .navbar {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background-color: #333;
-      padding: 10px 0;
-    }
-
-    .nav-item {
-      margin: 0 10px;
-    }
-
-    .nav-item a {
-      color: white;
-      text-decoration: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-    }
-
-    .nav-item a.active, .nav-item a:hover {
-      background-color: #ff6347;
-    }
 
     h1 {
       text-align: center;
@@ -109,51 +71,25 @@
       cursor: pointer;
       text-align: center;
     }
-
-    footer {
-      text-align: center;
-      margin-top: 30px;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      .navbar {
-        flex-direction: column;
-      }
-
-      .nav-item {
-        margin: 5px 0;
-      }
-    }
+    
   </style>
 </head>
 
 <body>
-  <!-- Logo -->
-  <div class="logo">
-    <a href="./home.html">
-      <img src="./images/logo2.png" height="150px" width="150px" alt="Mama's Restaurant Logo"/>
-    </a>
-  </div>
-
-  <!-- Navigation -->
+  <div class="logo"><a href="./home.html"><img src = "./images/logo2.png" height="150px" width="150px"/></a></div>
   <div class="navbar">
-    <div class="nav-item"><a href="./social.html">Socials</a></div>
-    <div class="nav-item"><a href="./contact.html">Contact</a></div>
-    <div class="nav-item"><a href="./menu.html" class="active">Menu</a></div>
-    <div class="nav-item"><a href="./history.html">History</a></div>
+    <div class="nav-item"><a href ="./social.html">Socials</a></div>
+    <div class="nav-item"><a href ="./contact.html">Contact</a></div>
+    <div class="nav-item"><a href ="./menu.html">Menu</a></div>
+    <div class="nav-item"><a href ="./history.html">History</a></div>
     <div class="nav-item"><a href="./home.html">Home</a></div>
   </div>
-
+  <div class="space"></div>
   <!-- Title -->
   <h1>Our Lunch & Dinner Menu</h1>
 
   <!-- Menu Form -->
-  <form>
+  <form  action="http://www.websitedevelopmentbook.com/FormEcho.php" method="post">
     <!-- Pasta Section -->
     <div class="menu-section">
       <label>Pasta Options:</label>
