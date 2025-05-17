@@ -44,7 +44,7 @@ body{
     padding-top: 40px;
     height: 400px;
     background-image: url('./images/history.jpg');
-    background-color: rgba(48, 48, 48, 0.374); /* Darker overlay */
+    background-color: rgba(48, 48, 48, 0.374); 
     background-blend-mode: multiply; /* Apply blend mode */
     background-size: cover;
     align-items: center;
@@ -63,7 +63,17 @@ body{
     border-radius: 5px;
     background-color: #ffffff;
     padding: 30px;
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+}
+
+.comments{
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 30px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 30%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 h1{
@@ -103,7 +113,7 @@ h3{
 .details{
     padding-left: 50px;
     padding-right: 50px;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align:justify; 
 }
@@ -149,7 +159,7 @@ textarea{
     margin: 5px;
     border-radius: 5px;
     border-color: #dbdada;
-
+    width: 95%;
 }
 
 button {
@@ -188,6 +198,6 @@ button.reset:hover{
 }
 
 img{
-    width: 85%;
+    height: auto;
 }
 
