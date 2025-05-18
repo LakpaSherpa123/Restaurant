@@ -120,7 +120,10 @@
     <div class="menu-section">
       <label>Pasta Options:</label>
       <div class="menu-option"><input type="checkbox" name="pasta" value="Spaghetti"/>Spaghetti <input type="number" class="quantity" min="0" placeholder="Qty"></div>
-      <div class="menu-option"><input type="checkbox" name="pasta" value="Fettuccine Alfredo"/>Fettuccine Alfredo <input type="number" class="quantity" min="0" placeholder="Qty"></div>
+      <div class="menu-option" onmouseover="showDishMessage()">
+        <input type="checkbox" name="pasta" value="Fettuccine Alfredo"/>Fettuccine Alfredo 
+        <input type="number" class="quantity" min="0" placeholder="Qty">
+      </div>
       <div class="menu-option"><input type="checkbox" name="pasta" value="Penne Vodka"/>Penne Vodka <input type="number" class="quantity" min="0" placeholder="Qty"></div>
       <div class="menu-option"><input type="checkbox" name="pasta" value="Linguine Pesto"/>Linguine Pesto <input type="number" class="quantity" min="0" placeholder="Qty"></div>
       <div class="menu-option"><input type="checkbox" name="pasta" value="Baked Ziti"/>Baked Ziti <input type="number" class="quantity" min="0" placeholder="Qty"></div>
@@ -170,9 +173,9 @@
     </div>
 
     <!-- Order Button -->
-    <button class="order-btn" type="submit">Order Now</button>
-  </form>
+    <button class="order-btn" type="submit" onclick="confirmOrder(event)">Order Now</button>
 
+  </form>
   <!-- Footer -->
   <footer>
     <div class="footerTab">
