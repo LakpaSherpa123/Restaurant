@@ -6,6 +6,23 @@
   <title>MAMA's History</title>
   
   <link rel='stylesheet' href='./style.css' >
+  <style>
+    /* Chapter 8: CSS Pseudo-elements and Classes */
+    .highlight {
+      background-color: #fff8dc;
+      padding: 5px;
+      border-left: 5px solid orange;
+    }
+
+    .paragraph::first-line {
+      font-weight: bold;
+      color: #444;
+    }
+
+    .paragraph::before {
+      content: "🍝 ";
+    }
+  </style>
 
 </head>
 <body>
@@ -25,16 +42,27 @@
       <img src = "./images/aboutUs.jpg" width="1700px"/>
     </div>
     <div>
-      <p class="paragraph">
+      <p class="paragraph highlight">
         From humble beginnings to a beloved neighborhood institution, Mama's Restaurant has been serving up authentic Italian cuisine for over 50 years. Our story began with Mama Rosa, who immigrated from a small village in Italy with a passion for cooking and a heart full of love. She started by sharing her cherished family recipes with friends and neighbors, and her delicious food quickly became a local sensation.
       </p>
-      <p class="paragraph">  
+      <p class="paragraph highlight">  
         As word spread, the demand for Mama Rosa's cooking grew, and she opened a small trattoria. The warm, inviting atmosphere and the mouthwatering aromas of garlic, basil, and simmering tomato sauce made everyone feel like they were home. Over the years, Mama's has expanded, but we've never lost sight of our roots. We continue to use Mama Rosa's original recipes, passed down through generations, and we're committed to providing our guests with the same delicious food and heartfelt hospitality that made Mama's a neighborhood favorite. We believe in using the freshest, highest-quality ingredients, sourced from local farmers whenever possible, to create dishes that are both comforting and unforgettable.
       </p>
-      <p class="paragraph">
+      <p class="paragraph highlight">
       Today, Mama's is run by Rosa's grandchildren, who honor her legacy by continuing to serve her classic dishes alongside new creations inspired by their own culinary journeys. We invite you to join us at Mama's and experience the taste of tradition, the warmth of family, and the love that goes into every dish.
       </p>
     </div>
+
+      <!-- Chapter 4: Using an unordered list to present key facts -->
+    <div class="highlight">
+      <h2>Did You Know?</h2>
+      <ul>
+        <li>Mama Rosa started the restaurant in 1975.</li>
+        <li>The original recipes are still used today.</li>
+        <li>Ingredients are sourced from local farms.</li>
+      </ul>
+    </div>
+  
     <div>
     <h2>Our Core Values</h2>
             <table style="margin: auto; padding-left: 20%; padding-right: 20%;" >
@@ -72,6 +100,7 @@
   <footer>
     <div class="footerTab">
       <p>COPYRIGHT © 2025 Mama's Kitchen. All rights reserved.</p>
+      <p>Email: <a href="mailto:info@mamas.com">info@mamas.com</a></p>
     </div>
   </footer>
 </body>
