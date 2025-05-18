@@ -30,6 +30,10 @@ body{
     color: white;
 }
 
+.nav-item:hover{
+    text-decoration: underline;
+}
+
 .logo{
     z-index: 1;
     position: fixed;
